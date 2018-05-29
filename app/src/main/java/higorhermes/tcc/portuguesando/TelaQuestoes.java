@@ -6,17 +6,17 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class Crase extends AppCompatActivity {
+public class TelaQuestoes extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_crase);
-        Button bt = (Button) findViewById(R.id.bt_iniciarCrase);
+        setContentView(R.layout.activity_tela_questoes);
+        Button bt = (Button) findViewById(R.id.button2);
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Crase.this, Crase01.class);
+                Intent intent = new Intent(TelaQuestoes.this, Crase.class);
                 startActivity(intent);
             }
         });

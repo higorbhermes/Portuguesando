@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         bt.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(MainActivity.this, Crase.class);
+            Intent intent = new Intent(MainActivity.this, TelaQuestoes.class);
             startActivity(intent);
         }
       });

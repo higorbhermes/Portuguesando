@@ -17,7 +17,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".Crase01" />
-        <activity android:name=".Crase"></activity>
+        <activity android:name=".Crase" />
+        <activity
+            android:name=".TelaPrincipal"
+            android:label="@string/title_activity_tela_principal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".TelaQuestoes"></activity>
     </application>
 
 </manifest>
