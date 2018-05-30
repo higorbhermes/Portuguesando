@@ -22,7 +22,9 @@
             android:name=".TelaPrincipal"
             android:label="@string/title_activity_tela_principal"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".TelaQuestoes"></activity>
+        <activity android:name=".TelaQuestoes" />
+        <activity android:name=".TelaOpcoes" />
+        <activity android:name=".TelaCadastro"></activity>
     </application>
 
 </manifest>

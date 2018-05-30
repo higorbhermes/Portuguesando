@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Button bt = (Button) findViewById(R.id.button_entrar);
+        Button button_cadastro = (Button) findViewById(R.id.button_cadastro);
         bt.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -20,5 +21,12 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         }
       });
+        button_cadastro.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, TelaCadastro.class);
+                startActivity(intent);
+            }
+        });
     }
 }

@@ -141,6 +141,12 @@
                     android:layout_weight="1"
                     android:orientation="horizontal">
 
+                    <TextView
+                        android:id="@+id/tv_"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
                     <Button
                         android:id="@+id/button_ajuda1"
                         android:layout_width="wrap_content"
@@ -148,6 +154,12 @@
                         android:layout_weight="1"
                         android:background="@android:color/holo_orange_light"
                         android:text="AJUDA" />
+
+                    <TextView
+                        android:id="@+id/tv_1500"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
 
                     <Button
                         android:id="@+id/button_responder1"
@@ -157,6 +169,12 @@
                         android:background="@android:color/holo_green_light"
                         android:text="RESPONDER" />
 
+                    <TextView
+                        android:id="@+id/tv_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
                     <Button
                         android:id="@+id/button_parar1"
                         android:layout_width="wrap_content"
@@ -164,6 +182,12 @@
                         android:layout_weight="1"
                         android:background="@android:color/holo_red_light"
                         android:text="PULAR" />
+
+                    <TextView
+                        android:id="@+id/tv_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
                 </LinearLayout>
 
             </RadioGroup>

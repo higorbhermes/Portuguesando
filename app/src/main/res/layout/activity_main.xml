@@ -35,7 +35,7 @@
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="187dp"
-                app:srcCompat="@drawable/slogan2" />
+                app:srcCompat="@drawable/slogan4" />
 
             <EditText
                 android:id="@+id/et_senha"
