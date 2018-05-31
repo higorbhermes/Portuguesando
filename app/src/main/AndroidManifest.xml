@@ -24,7 +24,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".TelaQuestoes" />
         <activity android:name=".TelaOpcoes" />
-        <activity android:name=".TelaCadastro"></activity>
+        <activity android:name=".TelaCadastro" />
+        <activity android:name=".tela_menu"></activity>
     </application>
 
 </manifest>
