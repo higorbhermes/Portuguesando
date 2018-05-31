@@ -53,40 +53,45 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
-                tools:text="Nome Completo" />
+                android:hint="Nome Completo"
+                android:drawableLeft="@drawable/pessoa"
+                android:inputType="textPersonName" />
 
             <EditText
                 android:id="@+id/et_Cpf"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="number"
-                tools:text="CPF" />
+                android:hint="CPF"
+                android:drawableLeft="@drawable/cpf"
+                android:inputType="number" />
 
             <EditText
-                android:id="@+id/et_idade"
+                android:id="@+id/et_datanascimento"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="number"
-                tools:text="Idade" />
+                android:hint="Data de Nascimento"
+                android:drawableLeft="@drawable/nascimento"
+                android:inputType="date" />
 
             <EditText
                 android:id="@+id/et_Telefone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="phone"
-                tools:text="Telefone" />
+                android:hint="Telefone"
+                android:drawableLeft="@drawable/telefone"
+                android:inputType="phone" />
 
             <EditText
                 android:id="@+id/et_email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textEmailAddress"
-                tools:text="E-mail" />
+                android:hint="E-mail"
+                android:drawableLeft="@drawable/email"
+                android:inputType="textEmailAddress" />
 
             <TextView
                 android:id="@+id/textView48"
@@ -105,24 +110,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
-                tools:text="Escolha um Nome de Usuário" />
+                android:hint="Escolha um Nome de Usuário"
+                android:drawableLeft="@drawable/user1"
+                android:inputType="textPersonName" />
 
             <EditText
                 android:id="@+id/et_senha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPassword"
-                tools:text="Digite uma senha" />
+                android:hint="Digite uma senha"
+                android:drawableLeft="@drawable/senha1"
+                android:inputType="textPassword" />
 
             <EditText
                 android:id="@+id/et_confirmacaosenha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPassword"
-                tools:text="Digite novamente a sua senha" />
+                android:hint="Digite novamente a sua senha"
+                android:drawableLeft="@drawable/senha1"
+                android:inputType="textPassword" />
 
             <TextView
                 android:id="@+id/textView"
@@ -183,6 +191,11 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
             </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
 
         </LinearLayout>
