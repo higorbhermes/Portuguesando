@@ -8,7 +8,9 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -120,7 +122,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Digite uma senha"
-                android:drawableLeft="@drawable/senha1"
+                android:drawableLeft="@drawable/senha2"
                 android:inputType="textPassword" />
 
             <EditText
@@ -129,7 +131,7 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Digite novamente a sua senha"
-                android:drawableLeft="@drawable/senha1"
+                android:drawableLeft="@drawable/senha2"
                 android:inputType="textPassword" />
 
             <TextView

@@ -11,25 +11,24 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Button" />
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/textView44"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
                 android:id="@+id/textView27"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Portuguesando"
+                android:text="PORTUGUESANDO"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                android:textStyle="bold|italic"
+                android:textStyle="bold"
                 android:typeface="sans" />
 
             <TextView
@@ -40,56 +39,16 @@
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
-                android:layout_height="120dp"
-                app:srcCompat="@drawable/slogan4" />
+                android:layout_height="160dp"
+                app:srcCompat="@drawable/slogan3" />
 
             <TextView
                 android:id="@+id/textView37"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView41"
-                    android:layout_width="1dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-
-                <Button
-                    android:id="@+id/bt_jogar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:drawableLeft="@drawable/jogo4"
-                    android:text="JOGAR" />
-
-                <TextView
-                    android:id="@+id/textView42"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-
-                <Button
-                    android:id="@+id/bt_regras"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:drawableLeft="@drawable/documento1"
-                    android:text="Regras" />
-
-                <TextView
-                    android:id="@+id/textView43"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-            </LinearLayout>
-
             <TextView
-                android:id="@+id/textView44"
+                android:id="@+id/textView67"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -99,84 +58,128 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/textView1000"
-                    android:layout_width="1dp"
+                    android:id="@+id/textView41"
+                    android:layout_width="25dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
 
                 <Button
-                    android:id="@+id/bt_usuario"
+                    android:id="@+id/button_jogar"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:drawableLeft="@drawable/usuario"
-                    android:text="Usuário" />
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/jogo6"
+                    android:text="JOGAR" />
 
                 <TextView
-                    android:id="@+id/textView1001"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/textView42"
+                    android:layout_width="25dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
 
                 <Button
-                    android:id="@+id/bt_avaliacao"
+                    android:id="@+id/button_regras"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:drawableLeft="@drawable/documento1"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/regras2"
+                    android:text="REGRAS" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button_dados"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/pessoa2"
+                    android:text="Dados" />
+
+                <TextView
+                    android:id="@+id/textView47"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView60"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/textView65"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView61"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button_avaliacao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/estrela"
                     android:text="Avaliação" />
 
                 <TextView
-                    android:id="@+id/textView1003"
+                    android:id="@+id/textView62"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button_sobre"
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/sobre"
+                    android:text="Sobre" />
+
+                <TextView
+                    android:id="@+id/textView63"
+                    android:layout_width="25dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button_sair"
+                    android:layout_width="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/sair"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="sair" />
+
+                <TextView
+                    android:id="@+id/textView64"
+                    android:layout_width="25dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
             </LinearLayout>
 
             <TextView
-                android:id="@+id/textView47"
+                android:id="@+id/textView66"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:id="@+id/textView41"
-                    android:layout_width="1dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-
-                <Button
-                    android:id="@+id/bt_jogar"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:drawableLeft="@drawable/jogo4"
-                    android:text="JOGAR" />
-
-                <TextView
-                    android:id="@+id/textView42"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-
-                <Button
-                    android:id="@+id/bt_regras"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:drawableLeft="@drawable/documento1"
-                    android:text="Regras" />
-
-                <TextView
-                    android:id="@+id/textView43"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1" />
-            </LinearLayout>
 
 
         </LinearLayout>

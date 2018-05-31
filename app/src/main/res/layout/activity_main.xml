@@ -17,25 +17,25 @@
             android:orientation="vertical" >
 
             <TextView
+                android:id="@+id/textView59"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
                 android:id="@+id/textView27"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Portuguesando"
+                android:text="PORTUGUESANDO"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-                android:textStyle="bold|italic"
-                android:typeface="sans" />
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:textStyle="bold"
+                android:visibility="visible" />
 
             <ImageView
                 android:id="@+id/imageView"
                 android:layout_width="match_parent"
                 android:layout_height="187dp"
-                app:srcCompat="@drawable/slogan4" />
+                app:srcCompat="@drawable/slogan3" />
 
             <TextView
                 android:id="@+id/textView51"
@@ -115,6 +115,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:background="@android:color/holo_blue_light"
                     android:text="Entrar" />
 
                 <TextView
@@ -134,14 +135,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
-            <TextView
-                android:id="@+id/textView31"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Ainda não possui cadastro?"
-                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -149,19 +142,36 @@
 
                 <TextView
                     android:id="@+id/textView34"
-                    android:layout_width="wrap_content"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
 
                 <Button
                     android:id="@+id/button_cadastro"
-                    android:layout_width="209dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/cadastro"
                     android:text="Cadastrar-se" />
 
                 <TextView
                     android:id="@+id/textView35"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/button_esquecisenha"
                     android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/esquecisenha"
+                    android:text="Esquesci a senha" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
             </LinearLayout>
