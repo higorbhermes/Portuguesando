@@ -12,7 +12,7 @@ public class TelaOpcoes extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_opcoes);
-        Button button_jogar = (Button) findViewById(R.id.button_jogar);
+        Button button_jogar = (Button) findViewById(R.id.button_jogoperguntas);
         button_jogar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -22,3 +22,4 @@ public class TelaOpcoes extends AppCompatActivity {
         });
     }
 }
+

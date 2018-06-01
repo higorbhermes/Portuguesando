@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/fundo20"
     tools:context="higorhermes.tcc.portuguesando.MainActivity">
 
     <ScrollView
@@ -59,7 +58,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:drawableLeft="@drawable/user1"
                     android:ems="10"
                     android:hint="Usuário"
                     android:inputType="textEmailAddress" />
@@ -90,7 +88,6 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:hint="Senha"
-                    android:drawableLeft="@drawable/senha1"
                     android:inputType="textPassword" />
 
                 <TextView

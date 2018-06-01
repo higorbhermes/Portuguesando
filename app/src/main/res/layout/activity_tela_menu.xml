@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/fundo20"
     tools:context="higorhermes.tcc.portuguesando.tela_menu">
 
     <ScrollView
@@ -54,13 +53,13 @@
                     android:layout_weight="1" />
 
                 <Button
-                    android:id="@+id/button_regras"
+                    android:id="@+id/button_caderno"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
-                    android:drawableTop="@drawable/regras80"
                     android:layout_weight="1"
-                    android:text="Regras" />
+                    android:background="@android:color/transparent"
+                    android:drawableTop="@drawable/caderno80"
+                    android:text="Caderno" />
 
                 <TextView
                     android:id="@+id/textView71"

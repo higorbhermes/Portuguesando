@@ -12,13 +12,5 @@ public class Crase extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crase);
-        Button bt = (Button) findViewById(R.id.bt_iniciarCrase);
-        bt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Crase.this, Crase01.class);
-                startActivity(intent);
-            }
-        });
     }
 }
