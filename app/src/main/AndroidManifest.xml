@@ -22,10 +22,13 @@
             android:name=".TelaPrincipal"
             android:label="@string/title_activity_tela_principal"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".TelaQuestoes" />
         <activity android:name=".TelaOpcoes" />
         <activity android:name=".TelaCadastro" />
-        <activity android:name=".tela_menu"></activity>
+        <activity android:name=".tela_menu" />
+        <activity android:name=".View.JogoForca.JogoForca1" />
+        <activity android:name=".JogoSemelhancas.View.JogoSemelhancas" />
+        <activity android:name=".JogoPerguntas.View.TelaEscolherAssunto" />
+        <activity android:name=".JogoPerguntas.View.TelaRespostaCerta"></activity>
     </application>
 
 </manifest>

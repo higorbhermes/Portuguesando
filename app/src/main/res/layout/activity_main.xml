@@ -165,7 +165,7 @@
                     android:layout_weight="1"
                     android:background="@android:color/transparent"
                     android:drawableTop="@drawable/esquecisenha"
-                    android:text="Esquesci a senha" />
+                    android:text="Esqueci a senha" />
 
                 <TextView
                     android:id="@+id/textView31"
