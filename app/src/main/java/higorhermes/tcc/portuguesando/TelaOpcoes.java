@@ -2,7 +2,8 @@ package higorhermes.tcc.portuguesando;
 
 import higorhermes.tcc.portuguesando.*;
 import higorhermes.tcc.portuguesando.JogoPerguntas.View.TelaEscolherAssunto;
-import higorhermes.tcc.portuguesando.JogoSemelhancas.View.JogoSemelhancas;
+import higorhermes.tcc.portuguesando.JogoSemelhancas.View.JogoSemelhancas1;
+import higorhermes.tcc.portuguesando.JogoSemelhancas.View.JogoSemelhancas2;
 import higorhermes.tcc.portuguesando.View.JogoForca.JogoForca1;
 
 import android.content.Intent;
@@ -37,7 +38,7 @@ public class TelaOpcoes extends AppCompatActivity {
         button_jogarsemelhancas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(TelaOpcoes.this, JogoSemelhancas.class);
+                Intent intent = new Intent(TelaOpcoes.this, JogoSemelhancas2.class);
                 startActivity(intent);
             }
         });
