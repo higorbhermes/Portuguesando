@@ -31,7 +31,9 @@
         <activity android:name=".JogoSemelhancas.View.JogoSemelhancas1" />
         <activity android:name=".JogoPerguntas.View.TelaRespostaErrada" />
         <activity android:name=".JogoSemelhancas.View.JogoSemelhancas2" />
-        <activity android:name=".TelaSobre"></activity>
+        <activity android:name=".TelaSobre" />
+        <activity android:name=".JogoSemelhancas.View.JogoSemelhancas3" />
+        <activity android:name=".JogoSemelhancas.View.JogoSemelhancas4"></activity>
     </application>
 
 </manifest>
