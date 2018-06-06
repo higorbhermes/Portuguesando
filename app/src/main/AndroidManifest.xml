@@ -3,6 +3,7 @@
     package="higorhermes.tcc.portuguesando">
 
     <application
+        android:name=".Control.BDConfig"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
