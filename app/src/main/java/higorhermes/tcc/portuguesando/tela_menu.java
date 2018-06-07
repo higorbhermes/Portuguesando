@@ -7,14 +7,14 @@ import android.view.View;
 import android.widget.Button;
 
 public class tela_menu extends AppCompatActivity {
-
+    String cpf;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_menu);
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
-        final String cpf = bundle.getString("cpf");
+        cpf = bundle.getString("cpf");
         Button button_jogar = (Button) findViewById(R.id.button_jogar);
         Button button_caderno = (Button) findViewById(R.id.button_caderno);
         Button button_dados = (Button) findViewById(R.id.button_dados);

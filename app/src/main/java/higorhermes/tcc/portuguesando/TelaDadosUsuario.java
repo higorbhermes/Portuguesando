@@ -14,7 +14,7 @@ import higorhermes.tcc.portuguesando.Model.Usuario;
 import io.realm.Realm;
 
 public class TelaDadosUsuario extends AppCompatActivity implements Serializable{
-
+    String cpf;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,7 +23,7 @@ public class TelaDadosUsuario extends AppCompatActivity implements Serializable{
         Button button_deletar = (Button) findViewById(R.id.button_deletarusuario);
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
-        final String cpf = bundle.getString("cpf");
+        cpf = bundle.getString("cpf");
         Realm realm = Realm.getDefaultInstance();
         realm.beginTransaction();
         Usuario usuario = realm.where(Usuario.class)
@@ -31,38 +31,52 @@ public class TelaDadosUsuario extends AppCompatActivity implements Serializable{
         TextView tv_cpfusuario = (TextView) findViewById(R.id.tv_cpfusuario);
         TextView tv_nomeusuario = (TextView) findViewById(R.id.tv_nomeusuario);
         TextView tv_emailusuario = (TextView) findViewById(R.id.tv_emailusuario);
-        TextView tv_telefoneusuario = (TextView) findViewById(R.id.tv_telefoneusuario);
-        TextView tv_datanascimentousuario = (TextView) findViewById(R.id.tv_datanascimentousuario);
+        //TextView tv_telefoneusuario = (TextView) findViewById(R.id.tv_telefoneusuario);
+        //TextView tv_datanascimentousuario = (TextView) findViewById(R.id.tv_datanascimentousuario);
         TextView tv_senhausuario = (TextView) findViewById(R.id.tv_senhausuario);
-        TextView tv_usuario_acesso = (TextView) findViewById(R.id.tv_usuario_acesso);
+        //TextView tv_usuario_acesso = (TextView) findViewById(R.id.tv_usuario_acesso);
         tv_cpfusuario.setText(cpf);
         tv_nomeusuario.setText(usuario.getNome());
         tv_emailusuario.setText(usuario.getEmail());
-        tv_telefoneusuario.setText(usuario.getTelefone());
-        tv_datanascimentousuario.setText(usuario.getData_nascimento());
+        //tv_telefoneusuario.setText(usuario.getTelefone());
+        //tv_datanascimentousuario.setText(usuario.getData_nascimento());
         tv_senhausuario.setText(usuario.getSenha());
-        tv_usuario_acesso.setText(usuario.getUser());
+        //tv_usuario_acesso.setText(usuario.getUser());
         button_alterar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(TelaDadosUsuario.this, TelaCadastro.class);
+                Bundle bundle = new Bundle();
+                bundle.putString("cpf", cpf);
+                Intent intent = new Intent(TelaDadosUsuario.this, TelaAlterarDados.class);
+                intent.putExtras(bundle);
                 startActivity(intent);
             }
         });
-        button_deletar.setOnClickListener(new View.OnClickListener() {
+        /*button_deletar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Realm realm = Realm.getDefaultInstance();
                 Usuario usuario = realm.where(Usuario.class)
                         .equalTo("cpf", cpf).findFirst();
+                realm.close();
                 realm.beginTransaction();
                 usuario.deleteFromRealm();
                 realm.commitTransaction();
-                realm.close();
                 Intent intent = new Intent(TelaDadosUsuario.this, MainActivity.class);
                 startActivity(intent);
             }
-        });
+        });*/
 
     }
+    public void finish(){
+        Bundle bundle = new Bundle();
+        bundle.putString("cpf", cpf);
+        Intent intent = new Intent(TelaDadosUsuario.this, tela_menu.class);
+        intent.putExtras(bundle);
+        startActivity(intent);
+    }
 }
+
+
+
+
