@@ -7,6 +7,7 @@ import higorhermes.tcc.portuguesando.JogoSemelhancas.View.JogoSemelhancas2;
 import higorhermes.tcc.portuguesando.JogoSemelhancas.View.JogoSemelhancas3;
 import higorhermes.tcc.portuguesando.JogoSemelhancas.View.JogoSemelhancas4;
 import higorhermes.tcc.portuguesando.View.JogoForca.JogoForca1;
+import io.realm.Realm;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -30,6 +31,7 @@ public class TelaOpcoes extends AppCompatActivity {
         button_jogar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Realm realm = Realm.getDefaultInstance();
                 Intent intent = new Intent(TelaOpcoes.this, TelaEscolherAssunto.class);
                 startActivity(intent);
             }
@@ -55,14 +57,17 @@ public class TelaOpcoes extends AppCompatActivity {
                 //Os sorteados agora são os 6 primeiros
                 for (int i = 2; i < 5; i++) {
                     if (i==2){
+                        i=7;
                         Intent intent = new Intent(TelaOpcoes.this, JogoSemelhancas2.class);
                          startActivity(intent);
                     }
                     if (i==3){
+                        i=7;
                         Intent intent = new Intent(TelaOpcoes.this, JogoSemelhancas3.class);
                         startActivity(intent);
                     }
                     if (i==4){
+                        i=7;
                         Intent intent = new Intent(TelaOpcoes.this, JogoSemelhancas4.class);
                         startActivity(intent);
                     }

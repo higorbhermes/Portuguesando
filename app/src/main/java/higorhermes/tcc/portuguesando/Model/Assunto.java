@@ -1,21 +1,32 @@
 package higorhermes.tcc.portuguesando.Model;
 
+import java.io.Serializable;
+
 import io.realm.RealmObject;
+import io.realm.annotations.PrimaryKey;
 
 /**
  * Created by higor on 06/06/18.
  */
 
-public class Assunto extends RealmObject {
-    String id, nome_assunto, sobre_assunto;
+public class Assunto extends RealmObject implements Serializable{
+    @PrimaryKey
+    private int id;
+    private String nome_assunto, sobre_assunto;
     public Assunto(){
     }
 
-    public String getId() {
+    public Assunto(int id, String nome_assunto, String sobre_assunto){
+        this.id = id;
+        this.nome_assunto = nome_assunto;
+        this.sobre_assunto = sobre_assunto;
+    }
+
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

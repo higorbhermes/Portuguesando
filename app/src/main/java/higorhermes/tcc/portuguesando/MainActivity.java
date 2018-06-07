@@ -17,7 +17,10 @@ public class MainActivity extends AppCompatActivity {
         bt.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
+            Bundle bundle = new Bundle();
+            bundle.putString("cpf", "62");
             Intent intent = new Intent(MainActivity.this, tela_menu.class);
+            intent.putExtras(bundle);
             startActivity(intent);
         }
       });

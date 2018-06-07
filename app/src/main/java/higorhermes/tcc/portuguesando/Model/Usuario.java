@@ -1,11 +1,33 @@
 package higorhermes.tcc.portuguesando.Model;
 
+import java.io.Serializable;
+
+import io.realm.RealmObject;
+import io.realm.annotations.PrimaryKey;
+
 /**
  * Created by higor on 29/05/18.
  */
 
-public class Usuario {
-    String nome, idade, cpf, email, telefone, usuario, senha, data_nascimento;
+public class Usuario extends RealmObject implements Serializable{
+    @PrimaryKey
+    private String cpf;
+    private String nome, idade, email, telefone, user, senha, data_nascimento;
+
+    public Usuario(){
+
+    }
+
+    public Usuario(String nome, String cpf, String email, String data_nascimento, String telefone, String user, String senha){
+        this.cpf = cpf;
+        this.data_nascimento = data_nascimento;
+        this.email = email;
+        this.nome = nome;
+        this.senha = senha;
+        this.user = user;
+        this.telefone = telefone;
+    }
+
 
     public String getNome() {
         return nome;
@@ -47,12 +69,12 @@ public class Usuario {
         this.telefone = telefone;
     }
 
-    public String getUsuario() {
-        return usuario;
+    public String getUser() {
+        return user;
     }
 
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
+    public void setUser(String usuario) {
+        this.user = usuario;
     }
 
     public String getSenha() {

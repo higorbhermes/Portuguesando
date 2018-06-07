@@ -7,8 +7,8 @@ import io.realm.RealmObject;
  */
 
 public class Questao extends RealmObject {
-    String id, texto, alternativa_a, alternativa_b, alternativa_c, alternativa_d, alternativa_e, alternativa_correta, ajuda1, ajuda2, ajuda3;
-    Assunto objAssunto;
+    private String id, texto, alternativa_a, alternativa_b, alternativa_c, alternativa_d, alternativa_e, alternativa_correta, ajuda1, ajuda2, ajuda3;
+    private Assunto objAssunto;
 
     public Assunto getObjAssunto() {
         return objAssunto;

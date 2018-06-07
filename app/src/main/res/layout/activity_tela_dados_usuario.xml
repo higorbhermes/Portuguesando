@@ -18,17 +18,17 @@
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/textView1009"
+                android:id="@+id/tv400"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="CADASTRO DE USUÁRIO"
+                android:text="Dados de Usuário"
                 android:textAppearance="@style/TextAppearance.AppCompat.Display1"
                 android:textStyle="bold"
                 android:typeface="sans" />
 
             <TextView
-                android:id="@+id/textView50"
+                android:id="@+id/tv401"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -39,61 +39,52 @@
                 app:srcCompat="@drawable/cadastrousuario" />
 
             <TextView
-                android:id="@+id/textView45"
+                android:id="@+id/tv402"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/textView46"
+                android:id="@+id/tv403"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Dados Pessoais"
                 android:textAppearance="@style/TextAppearance.AppCompat.Button" />
 
-            <EditText
-                android:id="@+id/et_nome"
+            <TextView
+                android:id="@+id/tv_nomeusuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Nome Completo"
                 android:drawableLeft="@drawable/pessoa"
-                android:inputType="textPersonName" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
-            <EditText
-                android:id="@+id/et_cpf"
+            <TextView
+                android:id="@+id/tv_cpfusuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/cpf"
-                android:ems="10"
-                android:hint="CPF"
-                android:inputType="number" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
-            <EditText
-                android:id="@+id/et_datanascimento"
+            <TextView
+                android:id="@+id/tv_datanascimentousuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableLeft="@drawable/nascimento"
-                android:ems="10"
-                android:hint="Data de Nascimento"
-                android:inputType="text" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
-            <EditText
-                android:id="@+id/et_Telefone"
+            <TextView
+                android:id="@+id/tv_telefoneusuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Telefone"
                 android:drawableLeft="@drawable/telefone"
-                android:inputType="phone" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
-            <EditText
-                android:id="@+id/et_email"
+            <TextView
+                android:id="@+id/tv_emailusuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="E-mail"
                 android:drawableLeft="@drawable/email"
-                android:inputType="textEmailAddress" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
 
             <TextView
                 android:id="@+id/textView48"
@@ -101,41 +92,29 @@
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/textView49"
+                android:id="@+id/tv404"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Dados de Acesso"
                 android:textAppearance="@style/TextAppearance.AppCompat.Button" />
 
-            <EditText
-                android:id="@+id/et_usuario"
+            <TextView
+                android:id="@+id/tv_usuario_acesso"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Escolha um Nome de Usuário"
                 android:drawableLeft="@drawable/user1"
-                android:inputType="textPersonName" />
-
-            <EditText
-                android:id="@+id/et_senha"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Digite uma senha"
-                android:drawableLeft="@drawable/senha2"
-                android:inputType="textPassword" />
-
-            <EditText
-                android:id="@+id/et_confirmacaosenha"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Digite novamente a sua senha"
-                android:drawableLeft="@drawable/senha2"
-                android:inputType="textPassword" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/tv_senhausuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/senha2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+
+            <TextView
+                android:id="@+id/tv405"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
@@ -146,56 +125,56 @@
                 android:orientation="horizontal">
 
                 <TextView
-                    android:id="@+id/tv_100"
+                    android:id="@+id/tv_406"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
 
                 <Button
-                    android:id="@+id/button_limpar"
+                    android:id="@+id/button_alterarusuario"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_orange_light"
-                    android:text="Limpar" />
+                    android:background="@android:color/holo_green_light"
+                    android:text="Alterar" />
 
                 <TextView
-                    android:id="@+id/tv_200"
+                    android:id="@+id/tv_407"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
 
                 <Button
-                    android:id="@+id/button_salvar"
+                    android:id="@+id/button_voltarusuario"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="@android:color/holo_green_light"
-                    android:text="Salvar" />
+                    android:background="@android:color/holo_orange_light"
+                    android:text="Voltar" />
 
                 <TextView
-                    android:id="@+id/tv_102"
+                    android:id="@+id/tv_408"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
 
                 <Button
-                    android:id="@+id/button_cancelar"
+                    android:id="@+id/button_deletarusuario"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@android:color/holo_red_light"
-                    android:text="Cancelar" />
+                    android:text="Deletar" />
 
                 <TextView
-                    android:id="@+id/tv_103"
+                    android:id="@+id/tv_409"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
             </LinearLayout>
 
             <TextView
-                android:id="@+id/textView52"
+                android:id="@+id/tv_410"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
