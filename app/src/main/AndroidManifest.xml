@@ -36,7 +36,8 @@
         <activity android:name=".JogoSemelhancas.View.JogoSemelhancas3" />
         <activity android:name=".JogoSemelhancas.View.JogoSemelhancas4" />
         <activity android:name=".TelaDadosUsuario" />
-        <activity android:name=".TelaAlterarDados"></activity>
+        <activity android:name=".TelaAlterarDados" />
+        <activity android:name=".JogoPerguntas.View.TelaQuestao"></activity>
     </application>
 
 </manifest>

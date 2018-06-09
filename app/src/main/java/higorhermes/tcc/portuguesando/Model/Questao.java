@@ -1,31 +1,41 @@
 package higorhermes.tcc.portuguesando.Model;
 
+import java.util.ArrayList;
+
 import io.realm.RealmObject;
+import io.realm.annotations.PrimaryKey;
 
 /**
  * Created by higor on 06/06/18.
  */
 
 public class Questao extends RealmObject {
-    private String id, texto, alternativa_a, alternativa_b, alternativa_c, alternativa_d, alternativa_e, alternativa_correta, ajuda1, ajuda2, ajuda3;
+    @PrimaryKey
+    private int id_questao;
+    private String texto, alternativa_a, alternativa_b, alternativa_c, alternativa_d, alternativa_e;
+    private int alternativa_correta, ajuda1, ajuda2, ajuda3;
     private Assunto objAssunto;
-
-    public Assunto getObjAssunto() {
-        return objAssunto;
-    }
-
-    public void setObjAssunto(Assunto objAssunto) {
-        this.objAssunto = objAssunto;
-    }
 
     public Questao(){
     }
-    public String getId() {
-        return id;
+
+    public Questao(int id_questao, String texto){
+        this.id_questao = id_questao;
+        this.texto = texto;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void adicionarAjudas(int ajuda1, int ajuda2, int ajuda3){
+        this.ajuda1 = ajuda1;
+        this.ajuda2 = ajuda2;
+        this.ajuda3 = ajuda3;
+    }
+
+    public int getId_questao() {
+        return id_questao;
+    }
+
+    public void setId_questao(int id_questao) {
+        this.id_questao = id_questao;
     }
 
     public String getTexto() {
@@ -76,35 +86,43 @@ public class Questao extends RealmObject {
         this.alternativa_e = alternativa_e;
     }
 
-    public String getAlternativa_correta() {
+    public int getAlternativa_correta() {
         return alternativa_correta;
     }
 
-    public void setAlternativa_correta(String alternativa_correta) {
+    public void setAlternativa_correta(int alternativa_correta) {
         this.alternativa_correta = alternativa_correta;
     }
 
-    public String getAjuda1() {
+    public int getAjuda1() {
         return ajuda1;
     }
 
-    public void setAjuda1(String ajuda1) {
+    public void setAjuda1(int ajuda1) {
         this.ajuda1 = ajuda1;
     }
 
-    public String getAjuda2() {
+    public int getAjuda2() {
         return ajuda2;
     }
 
-    public void setAjuda2(String ajuda2) {
+    public void setAjuda2(int ajuda2) {
         this.ajuda2 = ajuda2;
     }
 
-    public String getAjuda3() {
+    public int getAjuda3() {
         return ajuda3;
     }
 
-    public void setAjuda3(String ajuda3) {
+    public void setAjuda3(int ajuda3) {
         this.ajuda3 = ajuda3;
+    }
+
+    public Assunto getObjAssunto() {
+        return objAssunto;
+    }
+
+    public void setObjAssunto(Assunto objAssunto) {
+        this.objAssunto = objAssunto;
     }
 }

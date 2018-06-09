@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="higorhermes.tcc.portuguesando.Crase01">
+    tools:context="higorhermes.tcc.portuguesando.JogoPerguntas.View.TelaQuestao">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -27,7 +27,7 @@
                 tools:visibility="visible" />
 
             <TextView
-                android:id="@+id/tvcrase1"
+                android:id="@+id/tv_numeroquestao"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -37,15 +37,14 @@
                 android:visibility="visible" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/tv_430"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/tv_texto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Assinale a alternativa na qual o emprego do sinal indicativo de crase está correto. (UFRPE, 2018)"
                 android:textAppearance="@style/TextAppearance.AppCompat.Button"
                 android:textStyle="bold" />
 
@@ -54,83 +53,78 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/tv_431"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
 
                 <RadioButton
-                    android:id="@+id/radioButton"
+                    android:id="@+id/rb_alternativa1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Acho que o reconhecimento deve ser extensivo às mulheres em geral."
                     android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
                 <TextView
-                    android:id="@+id/textView6"
+                    android:id="@+id/tv_432"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
 
                 <RadioButton
-                    android:id="@+id/radioButton2"
+                    android:id="@+id/rb_alternativa2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:text="O respeito é devido à toda pessoa, seja mulher ou homem."
                     android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
                 <TextView
-                    android:id="@+id/textView7"
+                    android:id="@+id/tv_433"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
 
                 <RadioButton
-                    android:id="@+id/radioButton3"
+                    android:id="@+id/rb_alternativa3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Mulheres são extraordinárias, mas àquelas que são mães merecem aplausos especiais. "
                     android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
                 <TextView
-                    android:id="@+id/textView8"
+                    android:id="@+id/tv_444"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
 
                 <RadioButton
-                    android:id="@+id/radioButton4"
+                    android:id="@+id/rb_alternativa4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Temos mesmo que parabenizar à quem foi tão importante para a história de nosso país"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
                 <TextView
-                    android:id="@+id/textView9"
+                    android:id="@+id/tv_445"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
 
                 <RadioButton
-                    android:id="@+id/radioButton5"
+                    android:id="@+id/rb_alternativa5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Tomara que “Extraordinárias mulheres” suscite em nós um novo olhar para às mulheres."
                     android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
                 <TextView
-                    android:id="@+id/textView10"
+                    android:id="@+id/tv_446"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
 
                 <TextView
-                    android:id="@+id/textView12"
+                    android:id="@+id/tv_447"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1" />
@@ -142,13 +136,13 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/tv_"
+                        android:id="@+id/tv_448"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
 
                     <Button
-                        android:id="@+id/button_ajuda12"
+                        android:id="@+id/button_ajuda1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -156,13 +150,13 @@
                         android:text="AJUDA" />
 
                     <TextView
-                        android:id="@+id/tv_1500"
+                        android:id="@+id/tv_449"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
 
                     <Button
-                        android:id="@+id/button_responder12"
+                        android:id="@+id/button_responder1"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
@@ -170,13 +164,13 @@
                         android:text="RESPONDER" />
 
                     <TextView
-                        android:id="@+id/tv_2"
+                        android:id="@+id/tv_450"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />
 
                     <Button
-                        android:id="@+id/button_parar12"
+                        android:id="@+id/button_parar1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -184,7 +178,7 @@
                         android:text="PULAR" />
 
                     <TextView
-                        android:id="@+id/tv_3"
+                        android:id="@+id/tv_451"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1" />

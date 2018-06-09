@@ -12,14 +12,14 @@ import io.realm.annotations.PrimaryKey;
 public class Assunto extends RealmObject implements Serializable{
     @PrimaryKey
     private int id;
-    private String nome_assunto, sobre_assunto;
+    private String nome_assunto, descricao;
     public Assunto(){
     }
 
-    public Assunto(int id, String nome_assunto, String sobre_assunto){
+    public Assunto(int id, String nome_assunto, String descricao){
         this.id = id;
         this.nome_assunto = nome_assunto;
-        this.sobre_assunto = sobre_assunto;
+        this.descricao = descricao;
     }
 
     public int getId() {
@@ -38,11 +38,11 @@ public class Assunto extends RealmObject implements Serializable{
         this.nome_assunto = nome_assunto;
     }
 
-    public String getSobre_assunto() {
-        return sobre_assunto;
+    public String getDescricao() {
+        return descricao;
     }
 
-    public void setSobre_assunto(String sobre_assunto) {
-        this.sobre_assunto = sobre_assunto;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 }
