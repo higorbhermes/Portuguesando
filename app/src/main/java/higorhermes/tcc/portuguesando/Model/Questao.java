@@ -13,7 +13,7 @@ public class Questao extends RealmObject {
     @PrimaryKey
     private int id_questao;
     private String texto, alternativa_a, alternativa_b, alternativa_c, alternativa_d, alternativa_e;
-    private int alternativa_correta, ajuda1, ajuda2, ajuda3;
+    private int alternativa_correta, ajuda1, ajuda2, ajuda3, id_assunto;
     private Assunto objAssunto;
 
     public Questao(){
@@ -124,5 +124,13 @@ public class Questao extends RealmObject {
 
     public void setObjAssunto(Assunto objAssunto) {
         this.objAssunto = objAssunto;
+    }
+
+    public int getId_assunto() {
+        return id_assunto;
+    }
+
+    public void setId_assunto(int id_assunto) {
+        this.id_assunto = id_assunto;
     }
 }

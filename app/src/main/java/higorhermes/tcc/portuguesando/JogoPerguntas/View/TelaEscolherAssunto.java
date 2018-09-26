@@ -4,6 +4,7 @@ import  higorhermes.tcc.portuguesando.*;
 import higorhermes.tcc.portuguesando.Model.Assunto;
 import higorhermes.tcc.portuguesando.Model.Questao;
 import io.realm.Realm;
+import io.realm.RealmResults;
 
 import android.content.Intent;
 import android.support.v7.app.AlertDialog;
@@ -12,9 +13,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class TelaEscolherAssunto extends AppCompatActivity {
+public class TelaEscolherAssunto extends AppCompatActivity implements Serializable {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +49,7 @@ public class TelaEscolherAssunto extends AppCompatActivity {
             }
         });
     }
+
 
     public void adicionarAssunto(){
         Assunto[] assuntos = new Assunto[200];
@@ -83,6 +86,17 @@ public class TelaEscolherAssunto extends AppCompatActivity {
         questoes[0].setAlternativa_correta(1);
         questoes[0].adicionarAjudas(2, 3, 4);
         questoes[0].setObjAssunto(assunto1);
+        //questoes[0].setId_assunto(assunto1.getId());
+        questoes[1] = new Questao(1, "O acento grave marca, na escrita, o fenômeno da crase, isto é, representa a fusão de dois a. Dessa forma, o acento indicativo da crase está corretamente empregado em: (CESGRANRIO, 2018)");
+        questoes[1].setAlternativa_a("Meu sonho é conhecer à Paris dos romances.");
+        questoes[1].setAlternativa_b("Todos deveriam sempre lembrar à quem agradecer.");
+        questoes[1].setAlternativa_c("Restrinjo-me àquilo que ficou combinado na reunião.");
+        questoes[1].setAlternativa_d("Ensinaram à ela muito sobre a história da psicanálise.");
+        questoes[1].setAlternativa_e("Referimo-nos à toda raiva acumulada em nossos corações.");
+        questoes[1].setAlternativa_correta(3);
+        questoes[1].adicionarAjudas(2, 1, 4);
+        questoes[1].setObjAssunto(assunto1);
+        //questoes[1].setId_assunto(assunto1.getId());
         for (int i=0; i<20000; i++){
             if(questoes[i] != null){
                 Realm realm2 = Realm.getDefaultInstance();

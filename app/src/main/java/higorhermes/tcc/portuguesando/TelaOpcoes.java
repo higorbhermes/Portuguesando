@@ -18,6 +18,7 @@ import android.widget.Button;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Random;
 
 public class TelaOpcoes extends AppCompatActivity {
 
@@ -46,33 +47,20 @@ public class TelaOpcoes extends AppCompatActivity {
         button_jogarsemelhancas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                List<Integer> possiveis = new ArrayList<Integer>();
-                //Inclui os 60 números possíveis
-                for (int i = 2; i < 5; i++) {
-                    possiveis.add(i);
-                }
-                //Embaralha a lista de números
-                Collections.shuffle(possiveis);
-
-                //Os sorteados agora são os 6 primeiros
-                for (int i = 2; i < 5; i++) {
-                    if (i==2){
-                        i=7;
+                Random gerador = new Random();
+                int num = gerador.nextInt(3);
+                if (num==0){
                         Intent intent = new Intent(TelaOpcoes.this, JogoSemelhancas2.class);
-                         startActivity(intent);
-                    }
-                    if (i==3){
-                        i=7;
+                        startActivity(intent);
+                }
+                if (num==1){
                         Intent intent = new Intent(TelaOpcoes.this, JogoSemelhancas3.class);
                         startActivity(intent);
-                    }
-                    if (i==4){
-                        i=7;
-                        Intent intent = new Intent(TelaOpcoes.this, JogoSemelhancas4.class);
-                        startActivity(intent);
-                    }
                 }
-
+                if (num==2){
+                    Intent intent = new Intent(TelaOpcoes.this, JogoSemelhancas4.class);
+                    startActivity(intent);
+                }
             }
         });
     }
